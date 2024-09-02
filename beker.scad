@@ -10,7 +10,8 @@ thickness=2;
 margin=0.01;
 
 difference() {
-    cylinder(h=height, d=diameter);
+    color("black")
+        cylinder(h=height, d=diameter);
     translate([0, 0, thickness])
         cylinder(h=height - thickness + margin, d=diameter - 2 * thickness);
 }
